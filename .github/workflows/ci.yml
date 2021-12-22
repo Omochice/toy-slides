@@ -1,0 +1,45 @@
+name: Build-slide
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "script.bash"
+      - ".github/workflows/ci.yml"
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+      - name: Set up node.js
+        uses: denolib/setup-node@v2
+      - name: Switch branch
+        uses: actions/checkout@v2
+        with:
+          ref: release
+      - name: Install marp
+        run: |
+          npm install --save-dev @marp-team/marp-cli@latest
+      - name: Build slides
+        run: |
+          bash script.sh > index.html
+      - name: Add built slides
+        run: |
+          git config user.name = "github-actions"
+          git config user.email = "github-actions[bot]@users.noreply.github.com"
+          git add index.html --force
+          for f in $(ls -- **/slide.html);do
+            git add $f --force
+          done
+          git commit -m ":robot: Add slides"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release

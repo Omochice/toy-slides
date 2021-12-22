@@ -2,6 +2,9 @@
 
 set -ue
 
+curl https://raw.githubusercontent.com/Omochice/marp-extended-default-theme/release/extended-default.css --output ./theme.css
+npx marp ./**/slide.md  --theme theme.css --allow-local-files true --html true
+
 cat <<EOS
 <!DOCTYPE html>
 <html lang="ja">
