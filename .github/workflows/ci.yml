@@ -37,8 +37,4 @@ jobs:
           git add index.html --force
           git add $(find ./slides/ -name slide.html) --force
           git commit -m ":robot: Add slides"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: release
+          git push --set-upstream origin release --force
