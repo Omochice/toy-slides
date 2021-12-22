@@ -25,11 +25,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: release
-      - name: Install marp
+      - name: Git merge
+        run: git merge origin/main
+      - name: Install marp and run it
         run: |
           npm install --save-dev @marp-team/marp-cli@latest
-          ls
-      - name: Build slides
+          curl https://raw.githubusercontent.com/Omochice/marp-extended-default-theme/release/extended-default.css --output ./theme.css
+          npx marp -I ./slides/ --theme theme.css --allow-local-files true --html true
+      - name: Build index.html
         run: |
           bash script.sh > index.html
       - name: Add built slides
