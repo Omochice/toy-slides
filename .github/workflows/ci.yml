@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,9 +35,7 @@ jobs:
           git config user.name = "github-actions"
           git config user.email = "github-actions[bot]@users.noreply.github.com"
           git add index.html --force
-          for f in $(ls -- **/slide.html);do
-            git add $f --force
-          done
+          git add $(find ./slides/ -name slide.html) --force
           git commit -m ":robot: Add slides"
       - name: Push changes
         uses: ad-m/github-push-action@master
