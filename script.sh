@@ -3,9 +3,8 @@
 set -ue
 
 curl https://raw.githubusercontent.com/Omochice/marp-extended-default-theme/release/extended-default.css --output ./theme.css
-npx marp ./**/slide.md  --theme theme.css --allow-local-files true --html true
 
-cat <<EOS
+cat << EOS
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -17,14 +16,15 @@ cat <<EOS
   <h1>My slides</h1>
 EOS
 
-files=$(ls -- **/slide.html)
+files=$(ls -- **/slide.md)
 
 for f in $files; do
+    npx marp $f --theme theme.css --allow-local-files true --html true
     title=$(dirname "$f")
     echo "    <li><a href=\"$f\">$title</a></li>"
 done
 
-cat <<EOS
+cat << EOS
   </body>
 </html>
 EOS
