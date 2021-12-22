@@ -17,9 +17,9 @@ cat << EOS
 EOS
 
 files=$(ls -- **/slide.md)
+npx marp $files --theme theme.css --allow-local-files true --html true
 
 for f in $files; do
-    npx marp $f --theme theme.css --allow-local-files true --html true
     title=$(dirname "$f")
     echo "    <li><a href=\"$f\">$title</a></li>"
 done

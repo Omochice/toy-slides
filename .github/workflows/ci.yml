@@ -28,6 +28,7 @@ jobs:
       - name: Install marp
         run: |
           npm install --save-dev @marp-team/marp-cli@latest
+          ls
       - name: Build slides
         run: |
           bash script.sh > index.html
