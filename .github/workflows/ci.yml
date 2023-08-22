@@ -20,12 +20,15 @@ jobs:
       - name: Set up node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - name: Install marp and run it
+          node-version: latest
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - run: pnpm install
+      - name: run marp
         run: |
-          npm install --save-dev @marp-team/marp-cli@latest
-          curl https://raw.githubusercontent.com/Omochice/marp-extended-default-theme/release/extended-default.css --output ./theme.css
-          npx marp -I ./slides/ --theme theme.css --allow-local-files true --html true
+          pnpm marp -I ./slides/ --theme extended-default.css --allow-local-files true --html true
       - name: Build index.html
         run: |
           bash script.sh > index.html

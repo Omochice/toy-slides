@@ -3,6 +3,6 @@
     "@marp-team/marp-cli": "^3.2.0"
   },
   "scripts": {
-    "marp": "marp -s ."
+    "marp:serve": "marp -s ."
   }
 }
