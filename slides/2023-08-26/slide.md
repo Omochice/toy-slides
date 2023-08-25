@@ -250,7 +250,7 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 <div class="column2" style="height: 100%;">
 
 ````
-```vim
+```
 :echo 42
 ```
 ````
