@@ -7,7 +7,7 @@ paginate: true
 
 # podiumを使ってdocとreadmeを生成する
 
-2023-08-26 @ゴリラVim #28
+2023-08-26 @ゴリラ.vim #28
 
 ---
 
@@ -46,7 +46,7 @@ Total Min:     21.802000 msec
 
 - GitHubやってる
 - VimとDenoがすき
-    - 後はformatterとかlinterとか
+    - 後はformatterとかlinterとかCIとか
 -->
 
 ---
@@ -60,12 +60,15 @@ https://vim-jp.org/vimdoc-ja/helphelp.html
 ```
 
 <!--
+- Vimでヘルプ引いてる？
+- `:help`でドキュメントがみれる
 - ヘルプが引けるととても便利
+- ここだけでも覚えて帰ってほしい
 -->
 
 ---
 
-## プラグインのドキュメント
+## プラグインのドキュメントは2箇所ありうる
 
 - doc/foo.txt
     - Vim scriptで書かれているプラグインだとこっちが多い？
@@ -75,6 +78,8 @@ https://vim-jp.org/vimdoc-ja/helphelp.html
 <!--
 - helpでプラグインのドキュメントも引ける
 
+- Vimでドキュメントと言ったとき、2種類あるよ
+
 - doc/下にあるとvimでヘルプがみれて便利だけどgithubでプラグイン漁るときはREADMEに動画とかついてるとわかりやすい
 
 - 2種類ドキュメントがある
@@ -82,10 +87,10 @@ https://vim-jp.org/vimdoc-ja/helphelp.html
 
 ---
 
-![こういうプラグイン、あるよね](https://user-images.githubusercontent.com/44566328/262411193-300584ed-e69d-4052-a99d-08f4ef4e80d4.png)
+![READMEしかないプラグインのスクリーンショット](https://user-images.githubusercontent.com/44566328/263171885-405ee508-186f-48c6-af4f-dc947a8e0019.png)
 
 <!--
-たまにどちらかしかないプラグインもある
+- たまにどちらかしかないプラグインもある
 -->
 
 ---
@@ -114,6 +119,7 @@ https://vim-jp.org/vimdoc-ja/helphelp.html
 <!--
 - MarkdownとVimdocを生成する`podium`というのが最近できた
 - perlのドキュメント形式のPODのファイルをhtmlとかに変換する
+    - PODだけ書けばそれを変換してドキュメント2つが作れる
 - Luaで書かれていて、依存がほぼない（luaのランタイムが必要）
 - webapiでも用意されている
 -->
@@ -208,13 +214,29 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 
 - ハイライトつきコードブロックが出力できない
 
+<div class="grid">
+<div class="column">
+
 ````
 ```vim
 :echo 42
 ```
 ````
 
+</div>
+<div class="column2" style="height: 100%;">
+
+```vim
+:echo 42
+```
+
+</div>
+</div>
+
 - ↑のmarkdownに相当するpodの構文がない
+
+<div class="grid">
+<div class="column">
 
 ```pod
 =pod
@@ -223,6 +245,20 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 
 =cut
 ```
+
+</div>
+<div class="column2" style="height: 100%;">
+
+````
+```vim
+:echo 42
+```
+````
+
+</div>
+</div>
+
+
 
 <!--
 - markdownだとコードブロックにシンタックスハイライトをつける構文があるが、対応するpodの構文はないので出力したmarkdownのコードブロックにハイライトが付かない
@@ -240,13 +276,35 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 
 - 現状、pod => Markdownとpod => Vimdocに対応
 
+<div class="grid">
+<div class="column" style="height: 100%;">
+
 ```pod
 begin vim
 
 :echo 42
 
-end
+end vim
 ```
+
+</div>
+<div class="column2" style="height: 100%;">
+
+````markdown
+```vim
+:echo 42
+```
+````
+
+```
+>
+    :echo 42
+<
+```
+
+</div>
+</div>
+
 
 <!--
 - ハイライトをつけたかったのでラッパを書いた
@@ -258,9 +316,10 @@ end
 
 ### 使い方
 
-
 ```console
-$ deno install --allow-net --allow-read --allow-write https://pax.deno.dev/Omochice/podeno/cli.ts
+$ deno install --allow-net --allow-read --allow-write \
+    https://pax.deno.dev/Omochice/podeno/cli.ts
+
 $ podeno markdown --in sample.pod
 ```
 
@@ -288,11 +347,13 @@ https://github.com/Omochice/tataku-processor-deepl/blob/main/.github/workflows/d
 ### 要改善点(知見求)
 
 
-- インデックス: `X<foo>`とリンク`L<foo>`の扱い
-    - Vimdoc: 同一ファイルの`foo`へのリンク
-        - `|foo|`と`*foo*`
-    - Markdown: カレントファイルから`foo`の位置にあるものへのリンクになってしまう
-        - https://github.com/Omochice/tataku-processor-deepl#contents のリンクが不正になる
+- インデックス: `X<foo>`とリンク: `L<foo>`の扱い
+    - Vimdoc: 同一ファイルの`*foo*`へのリンク
+        - `*foo*`(ヘルプタグ)と`|foo|`(ヘルプタグへのリンク)
+        - [`:help help-writing`](https://vim-jp.org/vimdoc-ja/helphelp.html#help-writing)が詳しい
+    - Markdown: カレントファイルから`foo`の位置にあるものへのリンク
+        -  存在しない場所へのリンクになってしまう
+        - 例: https://github.com/Omochice/tataku-processor-deepl#contents
 
 <!--
 - まだいまいち
@@ -304,12 +365,18 @@ https://github.com/Omochice/tataku-processor-deepl/blob/main/.github/workflows/d
 
 ### まとめ
 
-- `:help`は便利
+- **`:help`は便利**
 - Vimプラグインのドキュメントはちゃんとやろうとすると2箇所に必要
-- 別言語からMarkdownとVimdocを生成する手法がある
-- コードブロックにハイライトが付かないのが気になったのでラッパを書いた
+- podiumを使うと`.pod`ファイル1つから2つのヘルプを生成できる
+- podiumはコードハイライトできない
+    - コードブロックにハイライトが付かないのが気になったのでラッパ(`podeno`)を書いた
+    - podenoはまだ課題があるので詳しい人、教えてください :bow:
 
 ---
+
+---
+
+## 以下、補足資料
 
 ---
 
