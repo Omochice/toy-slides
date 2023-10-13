@@ -14,11 +14,9 @@ cat << EOS
   <h1>My slides</h1>
 EOS
 
-# files=$(ls -- **/slide.html)
-# npx marp $files --theme theme.css --allow-local-files true --html true
-
-for f in $(find ./slides/ -name slide.html); do
-    title=$(basename -- $(dirname "$f"))
+for f in $(find ./dist -name slide.html); do
+    pathto=$(realpath $f --relative-to=./dist)
+    title=$(dirname "$pathto")
     echo "    <li><a href=\"$f\">$title</a></li>"
 done
 
