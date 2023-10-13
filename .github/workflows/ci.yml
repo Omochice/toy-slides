@@ -29,9 +29,6 @@ jobs:
       - name: run marp
         run: |
           pnpm build
-      - name: Build index.html
-        run: |
-          bash script.sh > index.html
       - name: Add built slides
         run: |
           git switch --create release
