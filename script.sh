@@ -17,7 +17,7 @@ EOS
 for f in $(find ./dist -name slide.html); do
     pathto=$(realpath $f --relative-to=./dist)
     title=$(dirname "$pathto")
-    echo "    <li><a href=\"$f\">$title</a></li>"
+    echo "    <li><a href=\"$pathto\">$title</a></li>"
 done
 
 cat << EOS
