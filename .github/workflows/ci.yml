@@ -4,16 +4,10 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "**/*.md"
-      - "script.sh"
-      - ".github/workflows/ci.yml"
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Git Checkout
         uses: actions/checkout@v4
@@ -26,7 +20,7 @@ jobs:
         with:
           version: latest
           run_install: true
-      - name: run marp
+      - name: build pages
         run: |
           pnpm build
       - name: upload artifact
