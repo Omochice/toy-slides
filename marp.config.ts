@@ -1,4 +1,4 @@
-import { defineConfig } from "@marp-team/marp-cli"
+import { defineConfig } from "@marp-team/marp-cli";
 
 export default defineConfig({
   theme: "./extended-default.css",
@@ -10,4 +10,4 @@ export default defineConfig({
   inputDir: "slides",
   output: "dist",
   author: "Omochice",
-})
+});
