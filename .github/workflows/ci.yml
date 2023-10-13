@@ -21,14 +21,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-      - name: Setup pnpm
+      - name: setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
-      - run: pnpm install --no-frozen-lockfile
+          run_install: true
       - name: run marp
         run: |
-          pnpm marp -I ./slides/ --theme extended-default.css --allow-local-files true --html true
+          pnpm build
       - name: Build index.html
         run: |
           bash script.sh > index.html
