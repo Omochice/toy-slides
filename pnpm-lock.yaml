@@ -13,7 +13,7 @@ devDependencies:
     version: 20.1.0
   '@types/mustache':
     specifier: ^4.2.3
-    version: 4.2.3
+    version: 4.2.5
   '@types/node':
     specifier: ^20.8.5
     version: 20.8.5
@@ -227,8 +227,8 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@types/mustache@4.2.3:
-    resolution: {integrity: sha512-MG+oI3oelPKLN2gpkel08v6Tp6zU2zZQRq+eSpRsFtLNTd2kxZolOHQTmQQs0wqXTLOqs+ri3tRUaagH5u0quw==}
+  /@types/mustache@4.2.5:
+    resolution: {integrity: sha512-PLwiVvTBg59tGFL/8VpcGvqOu3L4OuveNvPi0EYbWchRdEVP++yRUXJPFl+CApKEq13017/4Nf7aQ5lTtHUNsA==}
     dev: true
 
   /@types/node@20.8.5:
