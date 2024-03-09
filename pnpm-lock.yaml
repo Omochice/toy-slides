@@ -10,7 +10,7 @@ devDependencies:
     version: 3.4.0(typescript@5.3.3)
   '@tsconfig/node-lts':
     specifier: ^20.0.0
-    version: 20.1.0
+    version: 20.1.1
   '@types/mustache':
     specifier: ^4.2.3
     version: 4.2.5
@@ -207,8 +207,8 @@ packages:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
     dev: true
 
-  /@tsconfig/node-lts@20.1.0:
-    resolution: {integrity: sha512-3w2D9MfGdqBL51pHB5nGFmGtXBn1gbO+n9xzwcGSvZPArtCn4tElk+6EeelLXispAeqv13GAgbzkgLNHtoxOCQ==}
+  /@tsconfig/node-lts@20.1.1:
+    resolution: {integrity: sha512-V7wHydi1dv8I8xiOX3pJ0lhC+MlOakznvLks94J6y/TqQK6DBcbdD1G4jEq8yU+s6lBASPn4e1Ci636fDqeyvQ==}
     dev: true
 
   /@tsconfig/node10@1.0.9:
