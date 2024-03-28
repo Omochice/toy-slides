@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "build": "astro build",
-    "check": "astro check",
+    "check": "npm-run-all check:*",
+    "check:fmt": "prettier --check src/**/*.{astro,ts}",
+    "check:astro": "astro check",
     "clean": "rimraf dist",
     "dev": "astro dev",
     "fmt": "npm-run-all fmt:*",
