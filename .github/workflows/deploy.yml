@@ -1,42 +1,33 @@
-name: Build-slide
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Git Checkout
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Set up node.js
-        uses: actions/setup-node@v4
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v2
         with:
-          node-version: latest
-      - name: setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: true
-      - name: build pages
-        run: |
-          pnpm build
-      - name: upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: dist
+          package-manager: pnpm@latest
+
   deploy:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
