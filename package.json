@@ -1,27 +1,27 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm-run-all -s build:slide build:index",
-    "build:index": "ts-node src/index.ts",
-    "build:slide": "marp -c marp.config.ts",
+    "build": "astro build",
     "clean": "rimraf dist",
-    "dev": "marp -s .",
+    "dev": "astro dev",
     "fmt": "npm-run-all fmt:*",
+    "fmt:code": "prettier --write src/**/*.{astro,ts}",
     "fmt:package": "sort-package-json"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.3.0",
+    "sakura.css": "^1.5.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.5.10",
-    "@marp-team/marp-cli": "^3.3.0",
-    "@tsconfig/node-lts": "^20.0.0",
-    "@types/mustache": "^4.2.3",
-    "@types/node": "^20.8.5",
+    "@marp-team/marp-core": "^3.9.0",
     "astro": "^4.5.10",
-    "glob": "^10.3.10",
-    "mustache": "^4.2.0",
+    "node-html-parser": "^6.1.12",
     "npm-run-all2": "^6.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "rimraf": "^5.0.5",
     "sort-package-json": "^2.6.0",
-    "ts-node": "^10.9.1",
     "typescript": "^5.4.3"
   }
 }
