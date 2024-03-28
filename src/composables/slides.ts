@@ -1,5 +1,6 @@
 import { getCollection, z } from "astro:content";
 import { parse } from "node-html-parser";
+import { stringify } from "yaml";
 
 import { marp } from "./marp";
 
@@ -11,7 +12,8 @@ import { marp } from "./marp";
 export async function getSlides() {
   return (await getCollection("slides", (s) => s.data.marp && !s.data.draft))
     .map((s) => {
-      const { html, css, comments } = marp.render(s.body);
+      const rawContent = [toYamlHeader(s.data), s.body].join("\n");
+      const { html, css, comments } = marp.render(rawContent);
       const doc = parse(html);
       const id = getDate(s.slug);
       const title =
@@ -47,4 +49,15 @@ function getDate(slug: string): string {
  */
 function compareDates(a: string, b: string): number {
   return new Date(b).getTime() - new Date(a).getTime();
+}
+
+/**
+ * Convert a record to a YAML header
+ *
+ * @param record The record
+ * @returns The YAML header
+ */
+function toYamlHeader(record: Record<string, unknown>): string {
+  const sep = "---";
+  return [sep, stringify(record), sep].join("\n");
 }

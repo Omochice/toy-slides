@@ -25,6 +25,7 @@
     "prettier-plugin-astro": "^0.13.0",
     "rimraf": "^5.0.5",
     "sort-package-json": "^2.6.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "yaml": "^2.4.1"
   }
 }
