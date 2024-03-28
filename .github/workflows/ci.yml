@@ -1,42 +1,27 @@
-name: Build-slide
+name: Checks
 
 on:
-  push:
-    branches:
-      - main
+  - push
+  - pull_request
 
 jobs:
-  build:
+  checks:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["20", "lts/*", "current"]
     steps:
-      - name: Git Checkout
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up node.js
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: latest
-      - name: setup pnpm
+          node-version: ${{ matrix.node }}
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
           run_install: true
-      - name: build pages
-        run: |
-          pnpm build
-      - name: upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: dist
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+      - name: Run checks
+        run: pnpm run check

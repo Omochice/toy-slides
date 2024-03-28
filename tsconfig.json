@@ -1,13 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@tsconfig/node-lts/tsconfig.json",
-  "include": [
-    "src"
-  ],
+  "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "outDir": "dist",
-    "lib": ["esnext"],
-    "types": ["node"],
-    "noEmit": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+    }
   }
 }
