@@ -7,7 +7,7 @@ export async function getStaticPaths() {
   return await getSlides();
 }
 
-const { html, title, css } = Astro.props;
+const { html, title, css, comments } = Astro.props;
 
 const doc = parse(html);
 const slide = doc
@@ -28,6 +28,17 @@ if (!slide) {
   </head>
   <body>
     <Fragment set:html={slide} />
+    {
+      comments.map((comment, idx) => (
+        <div
+          class="bespoke-marp-note"
+          data-index={idx}
+          tabindex="0"
+        >
+          <p>{comment.join("\n")}</p>
+        </div>
+      ))
+    }
     <script>
       import "@marp-team/marp-cli/lib/bespoke";
     </script>
