@@ -1,5 +1,5 @@
 section::after {
-  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+  content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
 }
 
 section {
@@ -7,14 +7,12 @@ section {
   border-bottom: solid 7px #ef5350;
   font-family: "Noto Sans JP";
 }
+
 section.title, section.lead {
   border: solid 7px #21c7a8;
   border-right: solid 7px #ef5350;
 }
+
 section[data-marpit-advanced-background=content] {
   border-right: none;
-}
-
-code {
-  font-family: "Fira Mono", monospace;
 }
