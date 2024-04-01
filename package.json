@@ -8,12 +8,14 @@
     "clean": "rimraf dist",
     "dev": "astro dev",
     "fmt": "npm-run-all fmt:*",
-    "fmt:code": "prettier --write src/**/*.{astro,ts}",
+    "fmt:code": "prettier --write src/**/*.{astro,ts} ./*.{cjs,mjs}",
     "fmt:package": "sort-package-json"
   },
   "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
     "@marp-team/marp-cli": "^3.3.0",
-    "sakura.css": "^1.5.0"
+    "sakura.css": "^1.5.0",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.5.10",
@@ -21,6 +23,7 @@
     "astro": "^4.5.10",
     "node-html-parser": "^6.1.12",
     "npm-run-all2": "^6.0.0",
+    "postcss-safe-important": "^2.0.1",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "rimraf": "^5.0.5",
