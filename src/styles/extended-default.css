@@ -26,23 +26,6 @@ section[data-marpit-advanced-background=content] {
   border-right: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr;
-  gap: 0px 0px;
-  grid-template-areas: ". ." "column column2";
-  align-items: center;
-}
-
-.column {
-  grid-area: column;
-}
-
-.column2 {
-  grid-area: column2;
-}
-
 code {
   font-family: "Fira Mono", monospace;
 }

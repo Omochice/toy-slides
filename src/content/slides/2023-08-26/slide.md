@@ -13,13 +13,13 @@ paginate: true
 
 ## あなたは誰
 
-<div class="grid">
-<div class="column">
+<div class="flex items-center">
+<div class="flex-1">
 
 ![height:350](https://avatars.githubusercontent.com/u/44566328?v=4)
 
 </div>
-<div class="column2">
+<div class="flex-auto">
 
 ```
 Name: Omochice
@@ -128,8 +128,8 @@ https://vim-jp.org/vimdoc-ja/helphelp.html
 
 ### 例えば(pod => markdown)
 
-<div class="grid">
-<div class="column">
+<div class="flex">
+<div class="flex-1">
 
 ```pod
 ---
@@ -157,7 +157,7 @@ sample
 ```
 
 </div>
-<div class="column2" style="height: 100%;">
+<div class="flex-1" style="height: 100%;">
 
 ````markdown
 # sample
@@ -215,8 +215,8 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 
 - ハイライトつきコードブロックが出力できない
 
-<div class="grid">
-<div class="column">
+<div class="flex">
+<div class="flex-1">
 
 ````
 ```vim
@@ -225,7 +225,7 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 ````
 
 </div>
-<div class="column2" style="height: 100%;">
+<div class="flex-1 h-100">
 
 ```vim
 :echo 42
@@ -236,8 +236,8 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 
 - ↑のmarkdownに相当するpodの構文がない
 
-<div class="grid">
-<div class="column">
+<div class="flex">
+<div class="flex-1">
 
 ```pod
 =pod
@@ -248,7 +248,7 @@ vim:tw=78:ts=8:noet:ft=help:norl:
 ```
 
 </div>
-<div class="column2" style="height: 100%;">
+<div class="flex-1 h-100">
 
 ````
 ```
