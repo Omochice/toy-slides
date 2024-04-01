@@ -14,13 +14,13 @@ paginate: true
 
 ## あなたは誰
 
-<div class="grid">
-<div class="column">
+<div class="flex items-center">
+<div class="flex-1">
 
 ![height:350](https://avatars.githubusercontent.com/u/44566328?v=4)
 
 </div>
-<div class="column2">
+<div class="flex-auto">
 
 ```
 Name: Omochice
