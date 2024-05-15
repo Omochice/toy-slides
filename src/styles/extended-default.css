@@ -16,3 +16,11 @@ section.title, section.lead {
 section[data-marpit-advanced-background=content] {
   border-right: none;
 }
+
+section ol>li {
+  list-style-type: decimal;
+}
+
+section ul>li {
+  list-style-type: disc;
+}
