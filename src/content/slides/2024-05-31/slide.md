@@ -55,7 +55,7 @@ ex: https://github.com/chmln/sd?tab=readme-ov-file#installation
 
 - linux/mac/winで動く
 - goのsingle binaryなのでインストールが楽
-    - PATHにポン置きでも動く
+  - PATHにポン置きでも動く
 - バージョン値がファイルに書き出されるのでgitで管理できる
 - Renovateでアップデートできる
 
