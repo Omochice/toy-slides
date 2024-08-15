@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.14.0(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.14.2(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@marp-team/marp-cli':
         specifier: ^3.3.0
         version: 3.4.0(typescript@5.5.4)
@@ -29,7 +29,7 @@ importers:
         version: 3.9.0
       astro:
         specifier: ^4.5.10
-        version: 4.14.0(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4)
+        version: 4.14.2(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4)
       node-html-parser:
         specifier: ^6.1.12
         version: 6.1.13
@@ -780,8 +780,8 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
 
-  astro@4.14.0:
-    resolution: {integrity: sha512-UWUOy0aX+x3oDlItcrc4lgLqUXm63w6iChWnWiFijnfpUSJvogtKmJzb79ZmNj56i0ZVGhNVRsbtVhofJPdIXg==}
+  astro@4.14.2:
+    resolution: {integrity: sha512-x9VeYx8Ih6kYKBMVwwsfRzsZVq30+SUhiawnYQ6+46qQnEx3zH05KcH24HsJMe6dVpHD8HdH7CWR5C4o7Q/jeg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2558,8 +2558,8 @@ packages:
   vfile@6.0.2:
     resolution: {integrity: sha512-zND7NlS8rJYb/sPqkb13ZvbbUoExdbi4w3SfRrMq6R3FvnLQmmfpajJNITuuYm6AZ5uao9vy4BAos3EXBPf2rg==}
 
-  vite@5.4.0:
-    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
+  vite@5.4.1:
+    resolution: {integrity: sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2884,9 +2884,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.14.0(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.2(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.14.0(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4)
+      astro: 4.14.2(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3541,7 +3541,7 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  astro@4.14.0(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4):
+  astro@4.14.2(@types/node@20.11.30)(rollup@4.20.0)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3602,10 +3602,11 @@ snapshots:
       tsconfck: 3.1.1(typescript@5.5.4)
       unist-util-visit: 5.0.0
       vfile: 6.0.2
-      vite: 5.4.0(@types/node@20.11.30)
-      vitefu: 0.2.5(vite@5.4.0(@types/node@20.11.30))
+      vite: 5.4.1(@types/node@20.11.30)
+      vitefu: 0.2.5(vite@5.4.1(@types/node@20.11.30))
       which-pm: 3.0.0
       xxhash-wasm: 1.0.2
+      yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
       zod-to-ts: 1.2.0(typescript@5.5.4)(zod@3.23.8)
@@ -5708,7 +5709,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.4.0(@types/node@20.11.30):
+  vite@5.4.1(@types/node@20.11.30):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.41
@@ -5717,9 +5718,9 @@ snapshots:
       '@types/node': 20.11.30
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.4.0(@types/node@20.11.30)):
+  vitefu@0.2.5(vite@5.4.1(@types/node@20.11.30)):
     optionalDependencies:
-      vite: 5.4.0(@types/node@20.11.30)
+      vite: 5.4.1(@types/node@20.11.30)
 
   volar-service-css@0.0.59(@volar/language-service@2.4.0-alpha.18):
     dependencies:
