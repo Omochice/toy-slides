@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.5.4))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.10)
       '@marp-team/marp-cli':
         specifier: ^3.3.0
-        version: 3.4.0(typescript@5.5.4)
+        version: 3.4.0(typescript@5.6.2)
       sakura.css:
         specifier: ^1.5.0
         version: 1.5.0
@@ -23,13 +23,13 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.0
-        version: 0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.4)
+        version: 0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.6.2)
       '@marp-team/marp-core':
         specifier: ^3.9.0
         version: 3.9.0
       astro:
         specifier: ^4.5.10
-        version: 4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.5.4)
+        version: 4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.6.2)
       node-html-parser:
         specifier: ^6.1.12
         version: 6.1.13
@@ -53,7 +53,7 @@ importers:
         version: 2.10.1
       typescript:
         specifier: ^5.4.3
-        version: 5.5.4
+        version: 5.6.2
       yaml:
         specifier: ^2.4.1
         version: 2.5.1
@@ -2478,8 +2478,8 @@ packages:
   typescript-auto-import-cache@0.3.3:
     resolution: {integrity: sha512-ojEC7+Ci1ij9eE6hp8Jl9VUNnsEKzztktP5gtYNRMrTmfXVwA1PITYYAkpxCvvupdSYa/Re51B6KMcv1CTZEUA==}
 
-  typescript@5.5.4:
-    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2838,13 +2838,13 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astrojs/check@0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.4)':
+  '@astrojs/check@0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.6.2)':
     dependencies:
-      '@astrojs/language-server': 2.14.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.4)
+      '@astrojs/language-server': 2.14.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.6.2)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
-      typescript: 5.5.4
+      typescript: 5.6.2
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -2856,12 +2856,12 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/language-server@2.14.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.4)':
+  '@astrojs/language-server@2.14.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.6.2)':
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/yaml2ts': 0.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
-      '@volar/kit': 2.4.0(typescript@5.5.4)
+      '@volar/kit': 2.4.0(typescript@5.6.2)
       '@volar/language-core': 2.4.0
       '@volar/language-server': 2.4.0
       '@volar/language-service': 2.4.0
@@ -2910,9 +2910,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.5.4))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.5.4)
+      astro: 4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.6.2)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3268,12 +3268,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@marp-team/marp-cli@3.4.0(typescript@5.5.4)':
+  '@marp-team/marp-cli@3.4.0(typescript@5.6.2)':
     dependencies:
       '@marp-team/marp-core': 3.9.0
       '@marp-team/marpit': 2.6.1
       chokidar: 3.6.0
-      cosmiconfig: 8.3.6(typescript@5.5.4)
+      cosmiconfig: 8.3.6(typescript@5.6.2)
       puppeteer-core: 21.4.1
       serve-index: 1.9.1
       tmp: 0.2.1
@@ -3462,12 +3462,12 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@volar/kit@2.4.0(typescript@5.5.4)':
+  '@volar/kit@2.4.0(typescript@5.6.2)':
     dependencies:
       '@volar/language-service': 2.4.0
       '@volar/typescript': 2.4.0
       typesafe-path: 0.2.2
-      typescript: 5.5.4
+      typescript: 5.6.2
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
 
@@ -3575,7 +3575,7 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.5.4):
+  astro@4.15.4(@types/node@20.11.30)(rollup@4.21.2)(typescript@5.6.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3632,7 +3632,7 @@ snapshots:
       string-width: 7.2.0
       strip-ansi: 7.1.0
       tinyexec: 0.3.0
-      tsconfck: 3.1.3(typescript@5.5.4)
+      tsconfck: 3.1.3(typescript@5.6.2)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       vite: 5.4.3(@types/node@20.11.30)
@@ -3642,7 +3642,7 @@ snapshots:
       yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
-      zod-to-ts: 1.2.0(typescript@5.5.4)(zod@3.23.8)
+      zod-to-ts: 1.2.0(typescript@5.6.2)(zod@3.23.8)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -3839,14 +3839,14 @@ snapshots:
 
   cookie@0.6.0: {}
 
-  cosmiconfig@8.3.6(typescript@5.5.4):
+  cosmiconfig@8.3.6(typescript@5.6.2):
     dependencies:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.2
 
   cross-fetch@4.0.0:
     dependencies:
@@ -5628,9 +5628,9 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsconfck@3.1.3(typescript@5.5.4):
+  tsconfck@3.1.3(typescript@5.6.2):
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.2
 
   tslib@2.7.0: {}
 
@@ -5642,7 +5642,7 @@ snapshots:
     dependencies:
       semver: 7.6.3
 
-  typescript@5.5.4: {}
+  typescript@5.6.2: {}
 
   uc.micro@1.0.6: {}
 
@@ -5962,9 +5962,9 @@ snapshots:
     dependencies:
       zod: 3.23.8
 
-  zod-to-ts@1.2.0(typescript@5.5.4)(zod@3.23.8):
+  zod-to-ts@1.2.0(typescript@5.6.2)(zod@3.23.8):
     dependencies:
-      typescript: 5.5.4
+      typescript: 5.6.2
       zod: 3.23.8
 
   zod@3.23.8: {}
