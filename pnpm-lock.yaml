@@ -26,7 +26,7 @@ importers:
         version: 0.9.3(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.2)
       '@marp-team/marp-core':
         specifier: ^3.9.0
-        version: 3.9.0
+        version: 3.9.1
       astro:
         specifier: ^4.5.10
         version: 4.16.18(@types/node@20.11.30)(rollup@4.28.1)(typescript@5.7.2)
@@ -492,8 +492,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@marp-team/marp-core@3.9.0':
-    resolution: {integrity: sha512-gi6nq0rsB1oMA8ReppW4XxmS4fisQiAsD0ZoUgLeG4h6SWatveCAA7fZyxnXfwA2UC8pNb7ktPqYdRsxvuwntA==}
+  '@marp-team/marp-core@3.9.1':
+    resolution: {integrity: sha512-/GOecdgt0HmvFnC/C2flxPfUVgLMNE8lP8UAvjlFfWyeB9hyNBP5k1N2Wnx0mXPU8UHpDzYdySDxIR+ki2p8Fw==}
     engines: {node: ^12.20 || ^14.13.1 || >=16}
 
   '@marp-team/marpit-svg-polyfill@2.1.0':
@@ -1545,8 +1545,8 @@ packages:
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
 
-  katex@0.16.9:
-    resolution: {integrity: sha512-fsSYjWS0EEOwvy81j3vRA8TEAhQhKiqO+FQaKWp0m39qwOzHVBgAUBIXWj1pB+O2W3fIpNa6Y9KSKCVbfPhyAQ==}
+  katex@0.16.18:
+    resolution: {integrity: sha512-LRuk0rPdXrecAFwQucYjMiIs0JFefk6N1q/04mlw14aVIVgxq1FO0MA9RiIIGVaKOB5GIP5GH4aBBNraZERmaQ==}
     hasBin: true
 
   kind-of@6.0.3:
@@ -1612,8 +1612,8 @@ packages:
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
-  markdown-it-front-matter@0.2.3:
-    resolution: {integrity: sha512-s9+rcClLmZsZc3YL8Awjg/YO/VdphlE20LJ9Bx5a8RAFLI5a1vq6Mll8kOzG6w/wy8yhFLBupaa6Mfd60GATkA==}
+  markdown-it-front-matter@0.2.4:
+    resolution: {integrity: sha512-25GUs0yjS2hLl8zAemVndeEzThB1p42yxuDEKbd4JlL3jiz+jsm6e56Ya8B0VREOkNxLYB4TTwaoPJ3ElMmW+w==}
 
   markdown-it@13.0.2:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
@@ -1820,11 +1820,6 @@ packages:
 
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
-
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
 
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
@@ -2058,20 +2053,12 @@ packages:
     resolution: {integrity: sha512-MkaDFrKOdpQT+8OQzRJDCLlSVR+JXgj0SYU8MbuAN1NRcRofmrpWpK5okAWIA7MgDI4FEQrXe6wOcieq6tNapA==}
     engines: {node: '>=4.0.0'}
 
-  postcss-selector-parser@6.0.15:
-    resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
-    engines: {node: '>=4'}
-
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-
-  postcss@8.4.38:
-    resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.49:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
@@ -2755,8 +2742,8 @@ packages:
     resolution: {integrity: sha512-f9s+fUkX04BxQf+7mMWAp5zk61pciie+fFLC9hX9UVvCeJQfNHRHXpeo5MPcR0EUf57PYLdt+ZO4f3Ipk2oZUw==}
     engines: {node: '>=0.1'}
 
-  xss@1.0.14:
-    resolution: {integrity: sha512-og7TEJhXvn1a7kzZGQ7ETjdQVS2UfZyTlsEdDOqvQF7GoxNfY+0YLCzBy1kPdsDDx4QuNAonQPddpsn6Xl/7sw==}
+  xss@1.0.15:
+    resolution: {integrity: sha512-FVdlVVC67WOIPvfOwhoMETV72f6GbW7aOabBC3WxN/oUdoEMDyLz4OgRv5/gck2ZeNqEQu+Tb0kloovXOfpYVg==}
     engines: {node: '>= 0.10.0'}
     hasBin: true
 
@@ -3242,7 +3229,7 @@ snapshots:
 
   '@marp-team/marp-cli@3.4.0(typescript@5.7.2)':
     dependencies:
-      '@marp-team/marp-core': 3.9.0
+      '@marp-team/marp-core': 3.9.1
       '@marp-team/marpit': 2.6.1
       chokidar: 3.6.0
       cosmiconfig: 8.3.6(typescript@5.7.2)
@@ -3258,16 +3245,16 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@marp-team/marp-core@3.9.0':
+  '@marp-team/marp-core@3.9.1':
     dependencies:
       '@marp-team/marpit': 2.6.1
       '@marp-team/marpit-svg-polyfill': 2.1.0(@marp-team/marpit@2.6.1)
       highlight.js: 11.8.0
-      katex: 0.16.9
+      katex: 0.16.18
       mathjax-full: 3.2.2
-      postcss: 8.4.38
-      postcss-selector-parser: 6.0.15
-      xss: 1.0.14
+      postcss: 8.4.49
+      postcss-selector-parser: 6.1.2
+      xss: 1.0.15
 
   '@marp-team/marpit-svg-polyfill@2.1.0(@marp-team/marpit@2.6.1)':
     optionalDependencies:
@@ -3280,8 +3267,8 @@ snapshots:
       js-yaml: 4.1.0
       lodash.kebabcase: 4.1.1
       markdown-it: 13.0.2
-      markdown-it-front-matter: 0.2.3
-      postcss: 8.4.38
+      markdown-it-front-matter: 0.2.4
+      postcss: 8.4.49
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -4400,7 +4387,7 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  katex@0.16.9:
+  katex@0.16.18:
     dependencies:
       commander: 8.3.0
 
@@ -4460,7 +4447,7 @@ snapshots:
       '@babel/types': 7.26.3
       source-map-js: 1.2.1
 
-  markdown-it-front-matter@0.2.3: {}
+  markdown-it-front-matter@0.2.4: {}
 
   markdown-it@13.0.2:
     dependencies:
@@ -4847,8 +4834,6 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.7: {}
-
   nanoid@3.3.8: {}
 
   negotiator@0.6.3: {}
@@ -5060,23 +5045,12 @@ snapshots:
 
   postcss-safe-important@2.0.1: {}
 
-  postcss-selector-parser@6.0.15:
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
-
   postcss-selector-parser@6.1.2:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
-
-  postcss@8.4.38:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.4.49:
     dependencies:
@@ -5872,7 +5846,7 @@ snapshots:
 
   xmldom-sre@0.1.31: {}
 
-  xss@1.0.14:
+  xss@1.0.15:
     dependencies:
       commander: 2.20.3
       cssfilter: 0.0.10
