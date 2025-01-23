@@ -15,7 +15,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@marp-team/marp-cli": "^3.3.0",
     "sakura.css": "^1.5.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
