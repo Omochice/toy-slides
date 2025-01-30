@@ -12,7 +12,7 @@
     "fmt:package": "sort-package-json"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/tailwind": "^6.0.0",
     "@marp-team/marp-cli": "^3.3.0",
     "sakura.css": "^1.5.0",
     "tailwindcss": "^3.4.3"
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
     "@marp-team/marp-core": "^3.9.0",
-    "astro": "^4.5.10",
+    "astro": "^5.0.0",
     "node-html-parser": "^6.1.12",
     "npm-run-all2": "^7.0.0",
     "postcss-safe-important": "^2.0.1",
