@@ -21,7 +21,7 @@
     "@astrojs/check": "^0.9.0",
     "@marp-team/marp-core": "^3.9.0",
     "astro": "^5.0.0",
-    "node-html-parser": "^6.1.12",
+    "node-html-parser": "^7.0.0",
     "npm-run-all2": "^7.0.0",
     "postcss-safe-important": "^2.0.1",
     "prettier": "^3.2.5",
