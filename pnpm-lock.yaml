@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^6.0.0
-        version: 6.0.2(astro@5.8.1(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.8.2(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@marp-team/marp-cli':
         specifier: ^3.3.0
         version: 3.4.0(typescript@5.8.3)
@@ -28,8 +28,8 @@ importers:
         specifier: 3.9.1
         version: 3.9.1
       astro:
-        specifier: 5.8.1
-        version: 5.8.1(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: 5.8.2
+        version: 5.8.2(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       node-html-parser:
         specifier: 6.1.13
         version: 6.1.13
@@ -736,8 +736,8 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
 
-  astro@5.8.1:
-    resolution: {integrity: sha512-lkBg1smMRFW+FQ6i92SgEN53o4+ItRjlRt6Ck+rEjmTcb57Bid7faTNKUQNYuNnxiesTWw3NJDyVPQPbfKDyfw==}
+  astro@5.8.2:
+    resolution: {integrity: sha512-t0TBpBdVluA2QVmbFBwpIqmTvBwNhIz1XTIT1BWPkDkoIgsiEMf6BOZqcoGG7f4GVKkUB9bTgMOhPgU3tbJ6vQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2849,9 +2849,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@5.8.1(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.8.2(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.8.1(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.8.2(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3430,7 +3430,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro@5.8.1(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.8.2(@types/node@22.15.24)(jiti@1.21.6)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
