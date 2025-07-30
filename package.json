@@ -20,7 +20,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@marp-team/marp-core": "3.9.1",
-    "astro": "5.12.5",
+    "astro": "5.12.6",
     "node-html-parser": "6.1.13",
     "npm-run-all2": "7.0.2",
     "postcss-safe-important": "2.0.1",
