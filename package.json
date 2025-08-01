@@ -22,7 +22,7 @@
     "@marp-team/marp-core": "3.9.1",
     "astro": "5.12.8",
     "node-html-parser": "6.1.13",
-    "npm-run-all2": "7.0.2",
+    "npm-run-all2": "8.0.4",
     "postcss-safe-important": "2.0.1",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1",
