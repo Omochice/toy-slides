@@ -29,6 +29,6 @@
     "rimraf": "6.0.1",
     "sort-package-json": "2.15.1",
     "typescript": "5.9.2",
-    "yaml": "2.8.0"
+    "yaml": "2.8.1"
   }
 }
