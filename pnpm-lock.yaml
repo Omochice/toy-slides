@@ -31,8 +31,8 @@ importers:
         specifier: 5.15.9
         version: 5.15.9(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.1)
       node-html-parser:
-        specifier: 6.1.13
-        version: 6.1.13
+        specifier: 7.0.1
+        version: 7.0.1
       npm-run-all2:
         specifier: 7.0.2
         version: 7.0.2
@@ -1827,8 +1827,8 @@ packages:
       encoding:
         optional: true
 
-  node-html-parser@6.1.13:
-    resolution: {integrity: sha512-qIsTMOY4C/dAa5Q5vsobRpOOvPfC4pB61UVW2uSwZNUp0QU/jCekTal1vMmbO0DgdHeLUJpv/ARmDqErVxA3Sg==}
+  node-html-parser@7.0.1:
+    resolution: {integrity: sha512-KGtmPY2kS0thCWGK0VuPyOS+pBKhhe8gXztzA2ilAOhbUbxa9homF1bOyKvhGzMLXUoRds9IOmr/v5lr/lqNmA==}
 
   node-mock-http@1.0.3:
     resolution: {integrity: sha512-jN8dK25fsfnMrVsEhluUTPkBFY+6ybu7jSB1n+ri/vOGjJxU8J9CZhpSGkHXSkFjtUhbmoncG/YG9ta5Ludqog==}
@@ -4883,7 +4883,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  node-html-parser@6.1.13:
+  node-html-parser@7.0.1:
     dependencies:
       css-select: 5.1.0
       he: 1.2.0
