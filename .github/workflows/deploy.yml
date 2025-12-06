@@ -17,7 +17,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
       - name: Install, build, and upload your site output
-        uses: withastro/action@56781b97402ce0487b7e61ce2cb960c0e2cc5289 # v3
+        uses: withastro/action@9811f9299d5d37ca0416ca85cee333c7c9485cd1 # v5
         with:
           package-manager: pnpm@latest
 
