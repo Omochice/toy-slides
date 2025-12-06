@@ -24,7 +24,7 @@
     "node-html-parser": "7.0.1",
     "npm-run-all2": "7.0.2",
     "postcss-safe-important": "2.0.1",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "rimraf": "6.1.2",
     "sort-package-json": "2.15.1",
