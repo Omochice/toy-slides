@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^6.0.0
-        version: 6.0.2(astro@5.17.3(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))
+        version: 6.0.2(astro@5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))
       '@marp-team/marp-cli':
         specifier: ^3.3.0
         version: 3.4.0(typescript@5.9.3)
@@ -28,8 +28,8 @@ importers:
         specifier: 4.2.0
         version: 4.2.0
       astro:
-        specifier: 5.17.3
-        version: 5.17.3(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2)
+        specifier: 5.18.0
+        version: 5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2)
       node-html-parser:
         specifier: 7.0.2
         version: 7.0.2
@@ -967,8 +967,8 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
 
-  astro@5.17.3:
-    resolution: {integrity: sha512-69dcfPe8LsHzklwj+hl+vunWUbpMB6pmg35mACjetxbJeUNNys90JaBM8ZiwsPK689SAj/4Zqb1ayaANls9/MA==}
+  astro@5.18.0:
+    resolution: {integrity: sha512-CHiohwJIS4L0G6/IzE1Fx3dgWqXBCXus/od0eGUfxrZJD2um2pE7ehclMmgL/fXqbU7NfE1Ze2pq34h2QaA6iQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1008,6 +1008,7 @@ packages:
   basic-ftp@5.0.4:
     resolution: {integrity: sha512-8PzkB0arJFV4jJWSGOYR+OEic6aeKMu/osRhBULN6RY0ykby6LKhbmuQ5ublvaas5BOwboah5D87nrHyuh8PPA==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.0, please upgrade
 
   batch@0.6.1:
     resolution: {integrity: sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==}
@@ -3088,9 +3089,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@5.17.3(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))':
+  '@astrojs/tailwind@6.0.2(astro@5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))':
     dependencies:
-      astro: 5.17.3(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3781,7 +3782,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro@5.17.3(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2):
+  astro@5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
