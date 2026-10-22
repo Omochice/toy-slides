@@ -25,8 +25,8 @@ importers:
         specifier: 0.9.6
         version: 0.9.6(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.9.3)
       '@marp-team/marp-core':
-        specifier: 4.3.0
-        version: 4.3.0
+        specifier: 4.4.0
+        version: 4.4.0
       astro:
         specifier: 5.18.0
         version: 5.18.0(@types/node@22.15.24)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.9.3)(yaml@2.8.3)
@@ -659,8 +659,8 @@ packages:
     resolution: {integrity: sha512-/GOecdgt0HmvFnC/C2flxPfUVgLMNE8lP8UAvjlFfWyeB9hyNBP5k1N2Wnx0mXPU8UHpDzYdySDxIR+ki2p8Fw==}
     engines: {node: ^12.20 || ^14.13.1 || >=16}
 
-  '@marp-team/marp-core@4.3.0':
-    resolution: {integrity: sha512-Qwd0wsHS+7bdCBmmnxCU2OKclCSdsVu4U474zSs44Y2SMXr6d9wBYAMD5IXI4dbmaB57Ez5fdPUxPZZsFo8Tmw==}
+  '@marp-team/marp-core@4.4.0':
+    resolution: {integrity: sha512-YTiS0oIo25KiqjfMtDchTMc/uuFhR48weKNVw4QPPAM/9UQ71QI0JnDkC1qenJSmFPMlXQK72wQ8vlhmgQS3Cg==}
     engines: {node: '>=18'}
 
   '@marp-team/marpit-svg-polyfill@2.1.0':
@@ -676,8 +676,8 @@ packages:
     resolution: {integrity: sha512-Hg7fZ8SqXwLjxeIFzSnlXkXEmt0ZXPeMJneEn9n1M495a34C4xtkgEgL8R1MW2IRCh4Yibn0xmGKcaf+GuqR2A==}
     engines: {node: '>=10'}
 
-  '@marp-team/marpit@3.2.1':
-    resolution: {integrity: sha512-MflN1movsh8PXJbM9otjJOtlcB0vSrvw5PgXs2PDguVYVzKQmGpiy9QHHKq0rryrgaSp376TdJWBP7mXHHAG8w==}
+  '@marp-team/marpit@3.2.3':
+    resolution: {integrity: sha512-YMSS+LaYM3/cCpB18gtmgHHRcu4R1FHSSj8l5biPTP68ML5pdiQNvgSADmnNGJI0uaW4msmPiVMI1zRJ4VquJw==}
     engines: {node: '>=18'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -955,6 +955,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  argparse@3.0.3:
+    resolution: {integrity: sha512-Sn98ftV3KfsO8xfLPHG6oT8y+b0yvbrLgZjgPDXsharNY15tTAjqIsIju4S32nl6/iEUNNE4v+yL2Zhm8ooP3w==}
 
   aria-query@5.3.2:
     resolution: {integrity: sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==}
@@ -1665,6 +1668,10 @@ packages:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
+  js-yaml@5.5.0:
+    resolution: {integrity: sha512-paNr4LFIFPjeeSmwNYdrb8FafLLG/Cr2Af3GjbsHJ5CxIjH4r0c2emlmRdAtpPAieP1gRVzk6buBbVP5gBMGAg==}
+    hasBin: true
+
   jsbn@1.1.0:
     resolution: {integrity: sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==}
 
@@ -1691,8 +1698,8 @@ packages:
     resolution: {integrity: sha512-woHRUZ/iF23GBP1dkDQMh1QBad9dmr8/PAwNA54VrSOVYgI12MAcE14TqnDdQOdzyEonGzMepYnqBMYdsoAr8Q==}
     hasBin: true
 
-  katex@0.16.33:
-    resolution: {integrity: sha512-q3N5u+1sY9Bu7T4nlXoiRBXWfwSefNGoKeOwekV+gw0cAXQlz2Ww6BLcmBxVDeXBMUDQv6fK5bcNaJLxob3ZQA==}
+  katex@0.17.0:
+    resolution: {integrity: sha512-Vdw0ATsQ9V+LuegM/BTwQqV/6cTl5lbGcIrU+BCgLxyf6bo38ybOr372tuSIxir3CN720flu1meYR6XzNMwQnw==}
     hasBin: true
 
   kleur@3.0.3:
@@ -1713,8 +1720,8 @@ packages:
   linkify-it@4.0.1:
     resolution: {integrity: sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==}
 
-  linkify-it@5.0.0:
-    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+  linkify-it@5.0.2:
+    resolution: {integrity: sha512-ONTm2jCMAVZjgQa/Fy1kScXsuOoF5NPTsoFBdE1KVIZ2vAh/r9+Bqo+0jINCBYnavTPQZz38QzFTme79ENoN3Q==}
 
   lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
@@ -1746,8 +1753,8 @@ packages:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
 
-  markdown-it@14.1.1:
-    resolution: {integrity: sha512-BuU2qnTti9YKgK5N+IeMubp14ZUKUUw7yeJbkjtosvHiP0AZ5c8IAgEMk79D0eC8F23r4Ac/q8cAIFdm2FtyoA==}
+  markdown-it@14.3.3:
+    resolution: {integrity: sha512-L//tDAkjTjJCU6pBUSBTgs3Kg4InVaZuUZog/b6V12UKhcDQ7S78877ibbCanRExwPuYP1CZD7Gd2dxSy1GXRg==}
     hasBin: true
 
   markdown-table@3.0.4:
@@ -1960,6 +1967,11 @@ packages:
 
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
+  nanoid@3.3.20:
+    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -2200,8 +2212,8 @@ packages:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
-  postcss-selector-parser@7.1.1:
-    resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
+  postcss-selector-parser@7.1.7:
+    resolution: {integrity: sha512-wWBro/7hJ40ye6TPiXkUQoXKCw23xSsjriUvqd7Uls9Sso3oLiON1flc18cCdnjgCRXw4fBVqUJJeOdDTh3P3g==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -2209,6 +2221,10 @@ packages:
 
   postcss@8.5.3:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.31:
+    resolution: {integrity: sha512-YUbWYCgErwnMAVkjUnYa+KlMBzGpHwiIt/DE7f0G33AuX2LH9UcTk6KgWxd3zRU+pN3u/C+Xl3EnMLM4Hea7Sg==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.6:
@@ -2457,6 +2473,10 @@ packages:
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
+    engines: {node: '>=0.10.0'}
+
+  source-map-js@1.2.2:
+    resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
     engines: {node: '>=0.10.0'}
 
   source-map@0.6.1:
@@ -2824,16 +2844,22 @@ packages:
     resolution: {integrity: sha512-LD2R7WivDYp1SPgZrxx/0222xVTitDjm36oKo5+bfYG5kEgnw+BOPVHdwmvpJKg/RfssfxDI1ouwD4XkEDEfbA==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-typescript@0.0.67:
     resolution: {integrity: sha512-rfQBy36Rm1PU9vLWHk8BYJ4r2j/CI024vocJcH4Nb6K2RTc2Irmw6UOVY5DdGiPRV5r+e10wLMK5njj/EcL8sA==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-yaml@0.0.67:
@@ -3048,8 +3074,8 @@ snapshots:
       volar-service-emmet: 0.0.67(@volar/language-service@2.4.27)
       volar-service-html: 0.0.67(@volar/language-service@2.4.27)
       volar-service-prettier: 0.0.67(@volar/language-service@2.4.27)(prettier@3.8.3)
-      volar-service-typescript: 0.0.67(@volar/language-service@2.4.27)
-      volar-service-typescript-twoslash-queries: 0.0.67(@volar/language-service@2.4.27)
+      volar-service-typescript: 0.0.67(@volar/language-service@2.4.27)(typescript@5.9.3)
+      volar-service-typescript-twoslash-queries: 0.0.67(@volar/language-service@2.4.27)(typescript@5.9.3)
       volar-service-yaml: 0.0.67(@volar/language-service@2.4.27)
       vscode-html-languageservice: 5.6.1
       vscode-uri: 3.1.0
@@ -3138,19 +3164,19 @@ snapshots:
     dependencies:
       fontkitten: 1.0.0
 
-  '@csstools/postcss-is-pseudo-class@5.0.3(postcss@8.5.6)':
+  '@csstools/postcss-is-pseudo-class@5.0.3(postcss@8.5.31)':
     dependencies:
-      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.1)
-      postcss: 8.5.6
-      postcss-selector-parser: 7.1.1
+      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.7)
+      postcss: 8.5.31
+      postcss-selector-parser: 7.1.7
 
-  '@csstools/selector-resolve-nested@3.1.0(postcss-selector-parser@7.1.1)':
+  '@csstools/selector-resolve-nested@3.1.0(postcss-selector-parser@7.1.7)':
     dependencies:
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.7
 
-  '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.1.1)':
+  '@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.1.7)':
     dependencies:
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.7
 
   '@emmetio/abbreviation@2.3.3':
     dependencies:
@@ -3473,23 +3499,23 @@ snapshots:
       postcss-selector-parser: 6.1.2
       xss: 1.0.15
 
-  '@marp-team/marp-core@4.3.0':
+  '@marp-team/marp-core@4.4.0':
     dependencies:
-      '@marp-team/marpit': 3.2.1
-      '@marp-team/marpit-svg-polyfill': 2.1.0(@marp-team/marpit@3.2.1)
+      '@marp-team/marpit': 3.2.3
+      '@marp-team/marpit-svg-polyfill': 2.1.0(@marp-team/marpit@3.2.3)
       highlight.js: 11.11.1
-      katex: 0.16.33
+      katex: 0.17.0
       mathjax-full: 3.2.2
-      postcss-selector-parser: 7.1.1
+      postcss-selector-parser: 7.1.7
       xss: 1.0.15
 
   '@marp-team/marpit-svg-polyfill@2.1.0(@marp-team/marpit@2.6.1)':
     optionalDependencies:
       '@marp-team/marpit': 2.6.1
 
-  '@marp-team/marpit-svg-polyfill@2.1.0(@marp-team/marpit@3.2.1)':
+  '@marp-team/marpit-svg-polyfill@2.1.0(@marp-team/marpit@3.2.3)':
     optionalDependencies:
-      '@marp-team/marpit': 3.2.1
+      '@marp-team/marpit': 3.2.3
 
   '@marp-team/marpit@2.6.1':
     dependencies:
@@ -3501,16 +3527,16 @@ snapshots:
       markdown-it-front-matter: 0.2.4
       postcss: 8.5.6
 
-  '@marp-team/marpit@3.2.1':
+  '@marp-team/marpit@3.2.3':
     dependencies:
-      '@csstools/postcss-is-pseudo-class': 5.0.3(postcss@8.5.6)
+      '@csstools/postcss-is-pseudo-class': 5.0.3(postcss@8.5.31)
       cssesc: 3.0.0
-      js-yaml: 4.1.1
+      js-yaml: 5.5.0
       lodash.kebabcase: 4.1.1
-      markdown-it: 14.1.1
+      markdown-it: 14.3.3
       markdown-it-front-matter: 0.2.4
-      postcss: 8.5.6
-      postcss-nesting: 13.0.2(postcss@8.5.6)
+      postcss: 8.5.31
+      postcss-nesting: 13.0.2(postcss@8.5.31)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -3773,6 +3799,8 @@ snapshots:
   arg@5.0.2: {}
 
   argparse@2.0.1: {}
+
+  argparse@3.0.3: {}
 
   aria-query@5.3.2: {}
 
@@ -4612,6 +4640,10 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
+  js-yaml@5.5.0:
+    dependencies:
+      argparse: 3.0.3
+
   jsbn@1.1.0: {}
 
   json-parse-even-better-errors@2.3.1: {}
@@ -4634,7 +4666,7 @@ snapshots:
     dependencies:
       commander: 8.3.0
 
-  katex@0.16.33:
+  katex@0.17.0:
     dependencies:
       commander: 8.3.0
 
@@ -4650,7 +4682,7 @@ snapshots:
     dependencies:
       uc.micro: 1.0.6
 
-  linkify-it@5.0.0:
+  linkify-it@5.0.2:
     dependencies:
       uc.micro: 2.1.0
 
@@ -4684,11 +4716,11 @@ snapshots:
       mdurl: 1.0.1
       uc.micro: 1.0.6
 
-  markdown-it@14.1.1:
+  markdown-it@14.3.3:
     dependencies:
       argparse: 2.0.1
       entities: 4.5.0
-      linkify-it: 5.0.0
+      linkify-it: 5.0.2
       mdurl: 2.0.0
       punycode.js: 2.3.1
       uc.micro: 2.1.0
@@ -5076,6 +5108,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanoid@3.3.20: {}
+
   negotiator@0.6.3: {}
 
   neotraverse@0.6.18: {}
@@ -5268,12 +5302,12 @@ snapshots:
       postcss: 8.5.6
       postcss-selector-parser: 6.1.2
 
-  postcss-nesting@13.0.2(postcss@8.5.6):
+  postcss-nesting@13.0.2(postcss@8.5.31):
     dependencies:
-      '@csstools/selector-resolve-nested': 3.1.0(postcss-selector-parser@7.1.1)
-      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.1)
-      postcss: 8.5.6
-      postcss-selector-parser: 7.1.1
+      '@csstools/selector-resolve-nested': 3.1.0(postcss-selector-parser@7.1.7)
+      '@csstools/selector-specificity': 5.0.0(postcss-selector-parser@7.1.7)
+      postcss: 8.5.31
+      postcss-selector-parser: 7.1.7
 
   postcss-safe-important@2.0.1: {}
 
@@ -5282,7 +5316,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-selector-parser@7.1.1:
+  postcss-selector-parser@7.1.7:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -5294,6 +5328,12 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  postcss@8.5.31:
+    dependencies:
+      nanoid: 3.3.20
+      picocolors: 1.1.1
+      source-map-js: 1.2.2
 
   postcss@8.5.6:
     dependencies:
@@ -5653,6 +5693,8 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
+  source-map-js@1.2.2: {}
+
   source-map@0.6.1:
     optional: true
 
@@ -5981,13 +6023,14 @@ snapshots:
       '@volar/language-service': 2.4.27
       prettier: 3.8.3
 
-  volar-service-typescript-twoslash-queries@0.0.67(@volar/language-service@2.4.27):
+  volar-service-typescript-twoslash-queries@0.0.67(@volar/language-service@2.4.27)(typescript@5.9.3):
     dependencies:
       vscode-uri: 3.1.0
     optionalDependencies:
       '@volar/language-service': 2.4.27
+      typescript: 5.9.3
 
-  volar-service-typescript@0.0.67(@volar/language-service@2.4.27):
+  volar-service-typescript@0.0.67(@volar/language-service@2.4.27)(typescript@5.9.3):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.3
@@ -5997,6 +6040,7 @@ snapshots:
       vscode-uri: 3.1.0
     optionalDependencies:
       '@volar/language-service': 2.4.27
+      typescript: 5.9.3
 
   volar-service-yaml@0.0.67(@volar/language-service@2.4.27):
     dependencies:
